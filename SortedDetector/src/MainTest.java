@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 
 class MainTest {
     @Test
@@ -78,5 +79,19 @@ class MainTest {
         int intArray[] = new int[]{ 1,7,8,0 };
         boolean actualResult = Main.isSorted(intArray, SortOrder.ASC);
         assertEquals(actualResult, false);
+    }
+
+    @Test
+    void isSortedNegative5() {
+        assertThrowsExactly(IllegalArgumentException.class,
+                ()->{Main.isSorted(null, SortOrder.ASC);} );
+    }
+
+    @Test
+    void isSortedNegative6() {
+        int intArray[] = new int[]{ 1,7,8,0 };
+
+        assertThrowsExactly(IllegalArgumentException.class,
+                    ()->{Main.isSorted(intArray, null);} );
     }
 }

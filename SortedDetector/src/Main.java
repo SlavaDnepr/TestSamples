@@ -7,6 +7,9 @@ public class Main {
 
     public static boolean isSorted(int[] array, SortOrder order)
     {
+        if (array == null || order == null)
+            throw new IllegalArgumentException();
+
         if (array.length <= 1)
             return true;
 
