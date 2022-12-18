@@ -7,10 +7,10 @@ public class Main {
 
     public static boolean isSorted(int[] array, SortOrder order)
     {
-        if (array == null || order == null)
+        if (array == null || order == null || array.length == 0)
             throw new IllegalArgumentException();
 
-        if (array.length <= 1)
+        if (array.length == 1)
             return true;
 
         for (int i = 1; i < array.length; i++) {
