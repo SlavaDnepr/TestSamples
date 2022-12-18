@@ -5,17 +5,17 @@ public class Main {
         System.out.println("isSorted: " + isSorted);
     }
 
-    public static boolean isSorted(int[] array, SortOrder sortOrder)
+    public static boolean isSorted(int[] array, SortOrder order)
     {
         if (array.length <= 1)
             return true;
 
         for (int i = 1; i < array.length; i++) {
-            if (sortOrder == SortOrder.ASC)
+            if (order == SortOrder.ASC)
                 if (array[i] < array[i - 1])
                     return false;
 
-            if (sortOrder == SortOrder.DESC)
+            if (order == SortOrder.DESC)
                 if (array[i] > array[i - 1])
                     return false;
         }
