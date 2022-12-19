@@ -12,7 +12,7 @@ public class FunctionsTask3 {
 
         int multiArithmeticElements = 1;
         for (int i = 0; i < n; i++)
-            multiArithmeticElements *= (a1+t*i);
+            multiArithmeticElements *= a1 + t * i;
 
         return multiArithmeticElements;
     }
