@@ -37,7 +37,7 @@ public class FunctionsTask2 {
         if (array == null || order == null || array.length == 0)
             throw new IllegalArgumentException();
 
-        if(!isSorted(array, order))
+        if (!isSorted(array, order))
             return array;
 
         for (int i = 0; i< array.length; i++)
