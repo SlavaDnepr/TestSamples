@@ -1,37 +1,78 @@
 public class ArrayRectangles {
 
+    private Rectangle[] rectangleArray;
+
     public ArrayRectangles(int size) {
-        // TODO place your code here
-        throw new UnsupportedOperationException();
+        if (size <= 0)
+            throw new IllegalArgumentException();
+
+        rectangleArray = new Rectangle[size];
     }
 
     public ArrayRectangles(Rectangle... rectangles) {
-        // TODO place your code here
-        throw new UnsupportedOperationException();
+        if (rectangles == null || rectangles.length == 0)
+            throw new IllegalArgumentException();
+
+        rectangleArray = rectangles;
     }
 
     public boolean addRectangle(Rectangle rectangle) {
-        // TODO place your code here
-        throw new UnsupportedOperationException();
+        for (int i = 0; i < rectangleArray.length; i++)
+            if (rectangleArray[i] == null){
+                rectangleArray[i] = rectangle;
+                return true;
+            }
+
+        return false;
     }
 
     public int size() {
-        // TODO place your code here
-        throw new UnsupportedOperationException();
+        int count = 0;
+        for (int i = 0; i < rectangleArray.length; i++)
+            if (rectangleArray[i] != null)
+                count++;
+
+        return count;
     }
 
     public int indexMaxArea() {
-        // TODO place your code here
-        throw new UnsupportedOperationException();
+        double maxArea = 0;
+        int indexMaxArea = -1;
+        for (int i = 0; i < rectangleArray.length; i++)
+            if (rectangleArray[i] != null)
+            {
+                double currentArea =  rectangleArray[i].area();
+                if (currentArea > maxArea){
+                    maxArea = currentArea;
+                    indexMaxArea = i;
+                }
+            }
+
+        return indexMaxArea;
     }
 
     public int indexMinPerimeter() {
-        // TODO place your code here
-        throw new UnsupportedOperationException();
+        double minPerimeter = Double.MAX_VALUE;
+        int indexMinPerimeter = -1;
+        for (int i = 0; i < rectangleArray.length; i++)
+            if (rectangleArray[i] != null)
+            {
+                double currentPerimeter =  rectangleArray[i].perimeter();
+                if (currentPerimeter < minPerimeter){
+                    minPerimeter = currentPerimeter;
+                    indexMinPerimeter = i;
+                }
+            }
+
+        return indexMinPerimeter;
     }
 
     public int numberSquares() {
-        // TODO place your code here
-        throw new UnsupportedOperationException();
+        int count = 0;
+        for (int i = 0; i < rectangleArray.length; i++)
+            if (rectangleArray[i] != null && rectangleArray[i].isSquare())
+                count++;
+
+        return count;
     }
 }
