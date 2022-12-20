@@ -3,9 +3,9 @@ public class IntArrayUtil {
         if (array == null || array.length == 0)
             throw new IllegalArgumentException();
 
-        Integer maxElement = array[0];
-        Integer first = 0;
-        Integer last = 0;
+        int maxElement = array[0];
+        int first = 0;
+        int last = 0;
 
         for (int i = 1; i < array.length; i++) {
             if (maxElement < array[i]) {
