@@ -21,7 +21,7 @@ public final class SalesPerson extends Employee {
             super.setBonus(bonus);
 
         if (percent > 100 && percent <= 200)
-            super.setBonus(bonus.multiply(BigDecimal.TWO));
+            super.setBonus(bonus.multiply(new BigDecimal(2)));
 
         if (percent > 200)
             super.setBonus(bonus.multiply(new BigDecimal(3)));
