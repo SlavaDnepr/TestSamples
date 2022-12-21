@@ -25,10 +25,10 @@ public class Company {
     }
 
     public String nameMaxSalary() {
-        String nameMaxSalary = "";
-        BigDecimal maxSalary = BigDecimal.ZERO;
+        String nameMaxSalary = employees[0].getName();
+        BigDecimal maxSalary = employees[0].toPay();
 
-        for (int i = 0; i < employees.length; i++) {
+        for (int i = 1; i < employees.length; i++) {
             BigDecimal employeeToPay = employees[i].toPay();
             if (employeeToPay.compareTo(maxSalary) > 0) {
                 maxSalary = employeeToPay;

@@ -1,5 +1,4 @@
 import java.math.BigDecimal;
-import java.math.BigInteger;
 
 public final class SalesPerson extends Employee {
     private final int percent;
@@ -25,6 +24,6 @@ public final class SalesPerson extends Employee {
             super.setBonus(bonus.multiply(BigDecimal.TWO));
 
         if (percent > 200)
-            super.setBonus(bonus.multiply(new BigDecimal(BigInteger.valueOf(3))));
+            super.setBonus(bonus.multiply(new BigDecimal(3)));
     }
 }

@@ -1,5 +1,4 @@
 import java.math.BigDecimal;
-import java.math.BigInteger;
 
 public final class Manager extends Employee {
     private final int clientAmount;
@@ -20,9 +19,9 @@ public final class Manager extends Employee {
         super.setBonus(bonus);
 
         if (clientAmount > 100 && clientAmount <= 150)
-            super.setBonus(bonus.add(new BigDecimal(BigInteger.valueOf(500))));
+            super.setBonus(bonus.add(new BigDecimal(500)));
 
         if (clientAmount > 150)
-            super.setBonus(bonus.add(new BigDecimal(BigInteger.valueOf(1000))));
+            super.setBonus(bonus.add(new BigDecimal(1000)));
     }
 }
