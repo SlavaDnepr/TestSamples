@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-public class SalesPerson extends Employee {
+public final class SalesPerson extends Employee {
     private final int percent;
 
     public SalesPerson(String name, BigDecimal salary, int percent)  {

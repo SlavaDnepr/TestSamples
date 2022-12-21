@@ -29,8 +29,9 @@ public class Company {
         BigDecimal maxSalary = BigDecimal.ZERO;
 
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i].toPay().compareTo(maxSalary) > 0) {
-                maxSalary = employees[i].toPay();
+            BigDecimal employeeToPay = employees[i].toPay();
+            if (employeeToPay.compareTo(maxSalary) > 0) {
+                maxSalary = employeeToPay;
                 nameMaxSalary = employees[i].getName();
             }
         }

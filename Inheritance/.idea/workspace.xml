@@ -28,44 +28,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.CompanyTest">
+}</component>
+  <component name="RunManager" selected="JUnit.All in Inheritance">
+    <configuration name="All in Inheritance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inheritance" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CompanyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Inheritance" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CompanyTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CompanyTest.testTotalToPay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Inheritance" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CompanyTest" />
-      <option name="METHOD_NAME" value="testTotalToPay([LEmployee;,java.math.BigDecimal,java.math.BigDecimal,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CompanyTest.testTotalToPay.[1] [Manager@8b96fde, SalesPerson@2d2e5f00, Manager@4c40b76e, Manager@2ea6137, Employee@41ee392b, Manager@1e67a849, SalesPerson@57d5872c, Manager@667a738, Manager@36f0f1be, Employee@157632c9, Manager@6ee12bac, Employee@55040f2f, SalesPerson@64c87930, Employee@400cff1a, Manager@275710fc, SalesPerson@525f1e4e, Employee@75f9eccc, SalesPerson@52aa2946, Manager@4de5031f, Employee@67e2d983], 396, 45485.489438283149638664326630532741546630859375, Manager157" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Inheritance" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CompanyTest" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:CompanyTest]/[test-template:testTotalToPay(%5BLEmployee;, java.math.BigDecimal, java.math.BigDecimal, java.lang.String)]/[test-template-invocation:#1]" />
-      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,13 +74,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmployeeTest.testConstructorShouldThrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inheritance" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeTest" />
+      <option name="METHOD_NAME" value="testConstructorShouldThrow(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CompanyTest" />
-        <item itemvalue="JUnit.CompanyTest.testTotalToPay.[1] [Manager@8b96fde, SalesPerson@2d2e5f00, Manager@4c40b76e, Manager@2ea6137, Employee@41ee392b, Manager@1e67a849, SalesPerson@57d5872c, Manager@667a738, Manager@36f0f1be, Employee@157632c9, Manager@6ee12bac, Employee@55040f2f, SalesPerson@64c87930, Employee@400cff1a, Manager@275710fc, SalesPerson@525f1e4e, Employee@75f9eccc, SalesPerson@52aa2946, Manager@4de5031f, Employee@67e2d983], 396, 45485.489438283149638664326630532741546630859375, Manager157" />
-        <item itemvalue="JUnit.CompanyTest.testTotalToPay" />
+        <item itemvalue="JUnit.All in Inheritance" />
+        <item itemvalue="JUnit.EmployeeTest.testConstructorShouldThrow" />
         <item itemvalue="JUnit.EmployeeTest" />
         <item itemvalue="JUnit.EmployeeCodeComplianceTest" />
+        <item itemvalue="JUnit.CompanyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -124,13 +120,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Employee.java</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Employee.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Manager.java</url>

@@ -6,7 +6,7 @@ public class Employee {
     private BigDecimal bonus;
 
     public Employee(String name, BigDecimal salary) {
-        if (name == null || name.isEmpty())
+        if (name == null || name.isBlank())
             throw new IllegalArgumentException();
 
         if (salary == null || salary.compareTo(BigDecimal.ZERO) <= 0)
@@ -23,6 +23,7 @@ public class Employee {
     public BigDecimal getSalary() {
         return this.salary;
     }
+
     public void setBonus(BigDecimal bonus) {
         if (bonus == null || bonus.compareTo(BigDecimal.ZERO) <= 0)
             throw new IllegalArgumentException();
