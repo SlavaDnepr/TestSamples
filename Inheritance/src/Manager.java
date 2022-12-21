@@ -12,6 +12,7 @@ public final class Manager extends Employee {
         this.clientAmount = clientAmount;
     }
 
+    @Override
     public void setBonus(BigDecimal bonus) {
         if (bonus == null)
             throw new IllegalArgumentException();

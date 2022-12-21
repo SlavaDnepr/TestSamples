@@ -38,7 +38,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.All in Inheritance (2)">
+  <component name="RunManager" selected="JUnit.All in Inheritance (3)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Inheritance" />
@@ -62,6 +62,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in Inheritance (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inheritance" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in Inheritance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Inheritance" />
       <option name="PACKAGE_NAME" value="" />
@@ -70,23 +78,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTest.testConstructorShouldThrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Inheritance" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployeeTest" />
-      <option name="METHOD_NAME" value="testConstructorShouldThrow(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Inheritance (3)" />
         <item itemvalue="JUnit.All in Inheritance (2)" />
         <item itemvalue="JUnit.All in Inheritance (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in Inheritance" />
-        <item itemvalue="JUnit.EmployeeTest.testConstructorShouldThrow" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +119,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Manager.java</url>
-          <line>15</line>
+          <line>16</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
