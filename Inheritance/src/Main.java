@@ -14,5 +14,6 @@ public class Main {
         // 900
         BigDecimal totalToPay = company.totalToPay();
         System.out.println(totalToPay);
+
     }
 }
