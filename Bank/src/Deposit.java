@@ -1,15 +1,25 @@
 import java.math.BigDecimal;
 
 public abstract class Deposit {
+    protected final BigDecimal amount;
+
+    protected final int period;
+
+    protected Deposit(BigDecimal depositAmount, int depositPeriod){
+        if (depositAmount.compareTo(BigDecimal.ZERO) <= 0 || depositPeriod <= 0)
+            throw new IllegalArgumentException();
+
+        amount = depositAmount;
+        period = depositPeriod;
+    }
+
     public BigDecimal getAmount() {
-        return BigDecimal.ZERO;
+        return amount;
     }
 
     public int getPeriod() {
-        return 0;
+        return period;
     }
 
-    public BigDecimal income() {
-        return BigDecimal.ZERO;
-    }
+    public abstract BigDecimal income();
 }

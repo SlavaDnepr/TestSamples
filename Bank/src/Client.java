@@ -1,29 +1,50 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Client {
 
+    private Deposit[] deposits;
+
     public Client() {
-        // TODO Replace throw with your code
-        throw new UnsupportedOperationException();
+        deposits = new Deposit[10];
     }
 
     public boolean addDeposit(Deposit deposit) {
-        // TODO Replace throw with your code
-        throw new UnsupportedOperationException();
+        for (int i = 0; i < deposits.length; i++)
+            if (deposits[i] == null) {
+                deposits[i] = deposit;
+                return true;
+            }
+
+        return false;
     }
 
     public BigDecimal totalIncome() {
-        // TODO Replace throw with your code
-        throw new UnsupportedOperationException();
+        BigDecimal totalIncome = BigDecimal.ZERO;
+
+        for (int i = 0; i < deposits.length; i++)
+            if (deposits[i] != null)
+                totalIncome = totalIncome.add(deposits[i].income());
+
+        return totalIncome;
     }
 
     public BigDecimal maxIncome() {
-        // TODO Replace throw with your code
-        throw new UnsupportedOperationException();
+        BigDecimal maxIncome = BigDecimal.ZERO.setScale(2, RoundingMode.HALF_EVEN);
+        for (int i = 0; i < deposits.length; i++)
+            if (deposits[i] != null) {
+                BigDecimal currentIncome = deposits[i].income();
+                if (currentIncome.compareTo(maxIncome) > 0)
+                    maxIncome = currentIncome;
+            }
+
+        return maxIncome.setScale(2, RoundingMode.HALF_EVEN);
     }
 
     public BigDecimal getIncomeByNumber(int number) {
-        // TODO Replace throw with your code
-        throw new UnsupportedOperationException();
+        if (number > 9 || deposits[number] == null)
+            return BigDecimal.ZERO.setScale(2, RoundingMode.HALF_EVEN);
+
+        return deposits[number].income();
     }
 }
