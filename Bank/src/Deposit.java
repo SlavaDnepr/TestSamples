@@ -6,7 +6,7 @@ public abstract class Deposit {
     protected final int period;
 
     protected Deposit(BigDecimal depositAmount, int depositPeriod){
-        if (depositAmount.compareTo(BigDecimal.ZERO) <= 0 || depositPeriod <= 0)
+        if (depositAmount.compareTo(new BigDecimal(0)) <= 0 || depositPeriod <= 0)
             throw new IllegalArgumentException();
 
         amount = depositAmount;
