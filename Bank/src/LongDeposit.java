@@ -10,10 +10,10 @@ public final class LongDeposit extends Deposit {
     public BigDecimal income() {
         BigDecimal subAmount = amount;
         for (int i = 7; i <= period; i++) {
-            BigDecimal interest = subAmount.divide(new BigDecimal(100)).multiply(new BigDecimal(15)).setScale(2, RoundingMode.HALF_EVEN);
+            BigDecimal interest = subAmount.divide(new BigDecimal(100)).multiply(new BigDecimal(15)).setScale(4, RoundingMode.HALF_EVEN);
             subAmount = subAmount.add(interest);
         }
 
-        return subAmount.subtract(amount).setScale(2, RoundingMode.HALF_EVEN);
+        return subAmount.subtract(amount).setScale(2, RoundingMode.DOWN);
     }
 }
