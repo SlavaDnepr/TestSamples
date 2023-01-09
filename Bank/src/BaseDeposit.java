@@ -9,12 +9,12 @@ public final class BaseDeposit extends Deposit {
 
     @Override
     public BigDecimal income() {
-        BigDecimal subAmount = amount;
+        BigDecimal totalAmount = amount;
         for (int i = 1; i <= period; i++) {
-            BigDecimal interest = subAmount.divide(new BigDecimal(20)).setScale(4, RoundingMode.HALF_EVEN);
-            subAmount = subAmount.add(interest);
+            BigDecimal interest = totalAmount.divide(new BigDecimal(20)).setScale(4, RoundingMode.HALF_EVEN);
+            totalAmount = totalAmount.add(interest);
         }
 
-        return subAmount.subtract(amount).setScale(2, RoundingMode.DOWN);
+        return totalAmount.subtract(amount).setScale(2, RoundingMode.DOWN);
     }
 }
