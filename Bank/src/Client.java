@@ -20,7 +20,7 @@ public class Client {
     }
 
     public BigDecimal totalIncome() {
-        BigDecimal totalIncome = BigDecimal.ZERO;
+        BigDecimal totalIncome = BigDecimal.ZERO.setScale(2, RoundingMode.HALF_EVEN);
 
         for (int i = 0; i < deposits.length; i++)
             if (deposits[i] != null)
@@ -42,7 +42,7 @@ public class Client {
             else
                 break;
 
-        return maxIncome.setScale(2, RoundingMode.HALF_EVEN);
+        return maxIncome;
     }
 
     public BigDecimal getIncomeByNumber(int number) {
