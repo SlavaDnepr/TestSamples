@@ -25,6 +25,8 @@ public class Client {
         for (int i = 0; i < deposits.length; i++)
             if (deposits[i] != null)
                 totalIncome = totalIncome.add(deposits[i].income());
+            else
+                break;
 
         return totalIncome;
     }
@@ -37,6 +39,8 @@ public class Client {
                 if (currentIncome.compareTo(maxIncome) > 0)
                     maxIncome = currentIncome;
             }
+            else
+                break;
 
         return maxIncome.setScale(2, RoundingMode.HALF_EVEN);
     }
