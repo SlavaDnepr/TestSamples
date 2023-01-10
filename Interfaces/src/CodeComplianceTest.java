@@ -95,7 +95,7 @@ class CodeComplianceTest {
                         "'com.epam.rd.qa.collections.Prolongable' interface");
 
         Optional<Class<?>> comparableOpt = Arrays.stream(depositClassInterfaces)
-                .filter(iFace -> iFace.getName().equals("com.epam.rd.qa.collections.Prolongable"))
+                .filter(iFace -> iFace.getName().equals("Prolongable"))
                 .findAny();
         assertTrue(comparableOpt.isPresent(),
                 "'"+ depositClass.getName() + "' class should implement " +

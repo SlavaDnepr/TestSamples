@@ -1,7 +1,9 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public final class LongDeposit extends Deposit implements Prolongable {
+public final class LongDeposit
+        extends Deposit
+        implements Prolongable {
 
     public LongDeposit(BigDecimal amount, int period) {
         super(amount, period);
@@ -20,11 +22,6 @@ public final class LongDeposit extends Deposit implements Prolongable {
 
     @Override
     public boolean canToProlong() {
-        return false;
-    }
-
-    @Override
-    public int compareTo(Deposit o) {
-        return 0;
+        return period < 36;
     }
 }
