@@ -1,4 +1,4 @@
-public class MatrixException extends Exception {
+public final class MatrixException extends RuntimeException {
 
     public MatrixException() {
         super();

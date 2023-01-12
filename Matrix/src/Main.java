@@ -1,8 +1,11 @@
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args) throws MatrixException {
-        mulMain(args);
+    public static void main(String[] args) {
+        Matrix m1 = new Matrix(new double[][]{{1., 2., 3.}, {4., 5., 6.}});
+        Matrix m2 = new Matrix(new double[][]{{7., 8.}, {9., 10.}, {11., 12.}});
+        Matrix result = m1.multiply(m2);
+        //mulMain(args);
     }
 
     static void mulMain(String[] args) {
