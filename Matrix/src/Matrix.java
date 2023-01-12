@@ -7,7 +7,7 @@ public final class Matrix {
     private final int columns;
 
     public Matrix(double[][] matrix) {
-        if (matrix == null || matrix.length == 0)
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
             throw new MatrixException();
 
         for (int i = 0; i < matrix.length; i++)

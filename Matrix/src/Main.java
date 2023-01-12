@@ -5,7 +5,8 @@ public class Main {
         Matrix m1 = new Matrix(new double[][]{{1., 2., 3.}, {4., 5., 6.}});
         Matrix m2 = new Matrix(new double[][]{{7., 8.}, {9., 10.}, {11., 12.}});
         Matrix result = m1.multiply(m2);
-        //mulMain(args);
+
+        mulMain(args);
     }
 
     static void mulMain(String[] args) {
